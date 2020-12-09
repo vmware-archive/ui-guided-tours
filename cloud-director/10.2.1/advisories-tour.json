@@ -1,0 +1,180 @@
+{
+    "steps":[
+       {
+          "elementSelector":".header:nth-child(5)>:nth-child(2)>.header-actions:nth-child(1)>.nav-link:nth-child(3)",
+          "description":{
+             "en":"Navigate to Administration section for Advisories."
+          },
+          "preStepRoute":"/administration/settings/advisories",
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>.fill-parent:nth-child(1)>.datagrid-host.fill-parent-grid:nth-child(1)>.datagrid-action-bar.top-action-bar:nth-child(1)>:nth-child(1)>.inline-actions-container:nth-child(1)>.btn-link.btn:nth-child(1)",
+          "description":{
+             "en":"Start creating a New Advisory"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(1)>:nth-child(1)>.clr-form-control.form-group:nth-child(1)>.clr-control-container:nth-child(2)>.clr-textarea-wrapper:nth-child(1)>.clr-textarea:nth-child(1)",
+          "description":{
+             "en":"Provide an advisory message describing the advisory. Message is limitted to 512 characters and you can include pure text and basic Markdown for links"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":2,
+          "spec":{
+             "autoFillText":"New advisory feature available in [Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/index.html)"
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(1)>:nth-child(1)>.clr-form-control.form-group:nth-child(1)>.clr-control-container:nth-child(2)>.clr-subtext:nth-child(3)>:nth-child(1)>:nth-child(2)>.alert-app-level.alert-danger.alert:nth-child(1)>.alert-items:nth-child(1)>.alert-item:nth-child(1)>.alert-text:nth-child(2)",
+          "description":{
+             "en":"Observe how your advisory will look like once created. The colloring depends on the priority you choose for the advisory"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"vcd-form-combobox vmw-combobox clr-icon[shape=\"caret down\"]",
+          "description":{
+             "en":"Specify the priority of an advisory is important step as some prioritized advisories can be dimissed or snoozed only based on the priority"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>.clr-popover-content:nth-child(14)>.dropdown.combobox-items-container:nth-child(1)>.dropdown-menu:nth-child(1)>.dropdown-item:nth-child(2)",
+          "description":{
+             "en":"Critical priority allows users to dimiss it or snooze it for some period"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"clr-icon[shape=\"calendar\"]",
+          "description":{
+             "en":"Set the start date when advisory will be available for users"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"clr-daypicker tr:nth-child(4) td:nth-child(2) clr-day button.day-btn",
+          "description":{
+             "en":"Select date"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"vcd-create-edit-advisory-modal>form>:nth-child(4) button",
+          "description":{
+             "en":"Define the end date when advisory won't be shown to the users"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"clr-daypicker tr:nth-child(4) td:nth-child(4) clr-day button.day-btn",
+          "description":{
+             "en":"Select the date"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(1)>.publish-scope:nth-child(5)>.form-group-with-no-left-padding:nth-child(1)>.clr-form-control:nth-child(1)>.clr-control-container:nth-child(2)>.clr-radio-wrapper:nth-child(1)>.clr-control-label:nth-child(2)",
+          "description":{
+             "en":"If this option is selected the advisory will be available to all users is the site. This publish option is applicable when site related notification is need"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(1)>.publish-scope:nth-child(5)>.form-group-with-no-left-padding:nth-child(1)>.clr-form-control:nth-child(1)>.clr-control-container:nth-child(2)>.clr-radio-wrapper:nth-child(3)>.clr-control-label:nth-child(2)",
+          "description":{
+             "en":"If you want to publish an advisory to a specific tenant, because of infrastructure updates affecting this tenant,  for example, you should select this option...."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(1)>.publish-scope:nth-child(5)>.tenant-scope:nth-child(2)>.dropdown-search-header:nth-child(1)>.search-entity-input:nth-child(1)>.clr-input:nth-child(2)",
+          "description":{
+             "en":"...next you need find and select the target tenant. You can specify one tenant for advisory. If you want to notify multiple tenants, you need to create dedicated advisory per tenant"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(1)>.publish-scope:nth-child(5)>.form-group-with-no-left-padding:nth-child(1)>.clr-form-control:nth-child(1)>.clr-control-container:nth-child(2)>.clr-radio-wrapper:nth-child(2)>.clr-control-label:nth-child(2)",
+          "description":{
+             "en":"If you want to show advisory only to the Sytem Administartor and not visible by the tenants on this site - you should chose that option"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-footer:nth-child(3)>.btn-primary.ok-btn.btn:nth-child(2)",
+          "description":{
+             "en":"Once confirmed the advisory will be created. After that, upon each login users will see their active advisory on top of the application. The active advisories are updated on a 1 hour interval."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       }
+    ],
+    "id":"db2f46de-99fc-68ae-bcc8-c74e5d422b8b",
+    "title":{
+       "en":"Working with advisories"
+    },
+    "description":{
+       "en":"See how providers can use the new Advisories feature to publish messages to broader audience"
+    },
+    "scope":[
+       "service-provider"
+    ],
+    "includeInAssistant": true
+ }

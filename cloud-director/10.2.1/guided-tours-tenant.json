@@ -1,0 +1,192 @@
+{
+    "steps":[
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.header>:nth-child(2)>.header-actions>.header-more-dropdown>.dropdown-toggle",
+          "description":{
+             "en":"Open \"More\" menu to list available plugins."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec": {
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"a[href*='/plugins/Vk13YXJl/guided-tours']",
+          "description":{
+             "en":"Select \"Guided Tours\" plugin to open landing page of the plugin."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec": {
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>.tour-container:nth-child(1)>.tour-table:nth-child(2)",
+          "description":{
+             "en":"See all tours available for you."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>.tour-container:nth-child(1)>.tour-table:nth-child(2)>.clr-row:nth-child(1)>.card-col:nth-child(1)>.tour-card.card:nth-child(1)>.card-block:nth-child(2)>.card-info:nth-child(2)>.card-info-lang:nth-child(2)",
+          "description":{
+             "en":"A tour can support multiple language translations."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>.tour-container:nth-child(1)>.tour-table:nth-child(2)>.clr-row:nth-child(1)>.card-col:nth-child(1)>.tour-card.card:nth-child(1)>.card-footer:nth-child(3)>.btn-link.btn:nth-child(1)",
+          "description":{
+             "en":"Starts the execution of the tour. If the tour it translated with your current application locale, it starts in it or otherwise starts in English."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>.tour-container:nth-child(1)>.tour-table:nth-child(2)>.clr-row:nth-child(1)>.card-col:nth-child(1)>.tour-card.card:nth-child(1)>.card-footer:nth-child(3)>.dropdown:nth-child(2)>.dropdown-toggle:nth-child(1)",
+          "description":{
+             "en":"...or you can perform actions on the tour, such as edit steps, save under new name or remove it from the loaded tours list."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>.tour-container:nth-child(1)>.tour-title-container:nth-child(1)>.datagrid-action-bar:nth-child(2)>.btn-link.btn:nth-child(1)",
+          "description":{
+             "en":"Click \"Record New Tour\" if you want to create your custom tour."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec": {
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>:nth-child(2)>.modal:nth-child(1)>.fadeInDown.animated.modal-lg.modal-dialog:nth-child(1)>.modal-content:nth-child(1)",
+          "description":{
+             "en":"While you create your custom tour you need to define steps of the tour. Each step is related to an element in the application. To make sure you will use the correct element use the \"Highlight Mode\". Once you ensure the proper element is highlighted enter in \"Explanation object\" mode to give a step more details"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>:nth-child(2)>.modal:nth-child(1)>.fadeInDown.animated.modal-lg.modal-dialog:nth-child(1)>.modal-content:nth-child(1)>.modal-footer:nth-child(3)>.btn-primary.btn:nth-child(2)",
+          "description":{
+             "en":"You can now start the recording mode"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec": {
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":".step-bar",
+          "description":{
+             "en":"In recording mode you are provided with more features from the status bar."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":".step-bar:nth-child(1)>.step-actions:nth-child(1)>.btn-link.btn-sm.btn:nth-child(3)",
+          "description":{
+             "en":"Reseting will clear all in-memory defined steps but it will not exit the recording mode."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":".step-bar:nth-child(1)>.step-actions:nth-child(1)>.btn-link.btn-sm.btn:nth-child(4)",
+          "description":{
+             "en":"While you create your custom tour, you can preview/change the settings of the steps at any time. You need to have at least one step created to have this functionality enabled."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":14000,
+          "action":0
+       },
+       {
+          "elementSelector":".step-bar:nth-child(1)>.step-actions:nth-child(1)>.btn-link.btn-sm.btn:nth-child(5)",
+          "description":{
+             "en":"When ready with the tour you run it in preview mode."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":".step-bar:nth-child(1)>.step-actions:nth-child(1)>.btn-primary.btn-sm.btn:nth-child(1)",
+          "description":{
+             "en":"A tour can be saved as a JSON file. During save you can specify the user visible title and description of the tour as well as the locale your explanation will displayed once tour is imported."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":14000,
+          "action":0
+       },
+       {
+          "elementSelector":".step-bar:nth-child(1)>.step-actions:nth-child(1)>.btn-link.btn-sm.btn:nth-child(2)",
+          "description":{
+             "en":"You can exit the recording mode at any time but you loose all steps defined."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec": {
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>.tour-container:nth-child(1)>.tour-title-container:nth-child(1)>.datagrid-action-bar:nth-child(2)>.dropdown:nth-child(2)>.dropdown-toggle.btn-link.btn:nth-child(1)",
+          "description":{
+             "en":"Once a tour is saved you can always import its content..."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec": {
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>.tour-container:nth-child(1)>.tour-title-container:nth-child(1)>.datagrid-action-bar:nth-child(2)>.dropdown:nth-child(2)>.dropdown-menu:nth-child(2)>.dropdown-item:nth-child(1)",
+          "description":{
+             "en":"...from a file"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper>.content:nth-child(1)>:nth-child(1)>:nth-child(2)>.content-container:nth-child(2)>.tour-container:nth-child(1)>.tour-title-container:nth-child(1)>.datagrid-action-bar:nth-child(2)>.dropdown:nth-child(2)>.dropdown-menu:nth-child(2)>.dropdown-item:nth-child(2)",
+          "description":{
+             "en":"... or from a GitHub repository. By default you can check for existing tours in VMware public repository or you can use private one"
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       }
+ 
+    ],
+    "id":"acd06c06-17f2-13e8-e723-0bc7a056dda9",
+    "title":{
+       "en":"Guided Tours tour"
+    },
+    "description":{
+       "en":"Walk through the \"Guided Tours plugin\" capabilities such as preview, load and record tour"
+    },
+    "scope": ["tenant"]
+ }
