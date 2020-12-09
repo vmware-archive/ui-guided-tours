@@ -1,0 +1,137 @@
+{
+    "steps":[
+       {
+          "elementSelector":".header:nth-child(5)>:nth-child(2)>.header-actions:nth-child(1)>.nav-link:nth-child(3)",
+          "description":{
+             "en":"Navigate to Administration section."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.has-nav-groups.clr-vertical-nav:nth-child(3)>.nav-content:nth-child(1)>.is-expanded.nav-group:nth-child(1)>.nav-group-children:nth-child(2)>:nth-child(1)>.active.nav-link:nth-child(1)>.nav-text:nth-child(1)",
+          "description":{
+             "en":"Make sure the Users section is selected."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+         "elementSelector": "BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(3)>.datagrid-host.users-datagrid:nth-child(1)>.datagrid-outer-wrapper:nth-child(2)>.datagrid-inner-wrapper:nth-child(1)>.datagrid:nth-child(1)>.datagrid-table-wrapper:nth-child(1)>.datagrid-table:nth-child(1)>.datagrid-row:nth-child(2)>.datagrid-row-flex.datagrid-row-master:nth-child(1)>.datagrid-row-sticky:nth-child(1)>.datagrid-cell.datagrid-fixed-column.datagrid-select:nth-child(1)>.clr-radio-wrapper:nth-child(1)>.clr-control-label:nth-child(2)",
+         "description":{
+            "en":"Select user whose quota you want to set."
+         },
+         "nextStepTimeout":10000,
+         "action":1,
+         "spec":{
+            "requiresClick":true
+         }
+       },
+       {
+         "elementSelector": "BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(3)>.datagrid-host.users-datagrid:nth-child(1)>.datagrid-action-bar.clr-dg-action-bar-mb:nth-child(1)>:nth-child(1)>.inline-actions-container:nth-child(1)>.quota-users-button.btn-link.btn:nth-child(3)",
+         "description":{
+            "en":"Open the quota management dialog."
+         },
+         "nextStepTimeout":10000,
+         "action":1,
+         "spec":{
+            "requiresClick":true
+         }
+
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(8)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(2)>.datagrid-host:nth-child(1)>.datagrid-action-bar:nth-child(1)>.btn-group:nth-child(1)>.qa-add-button.btn-link.btn-sm.btn:nth-child(1)",
+          "description":{
+             "en":"Add new quota."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(8)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(2)>.datagrid-host:nth-child(1)>.datagrid-outer-wrapper:nth-child(2)>.datagrid-inner-wrapper:nth-child(1)>.datagrid:nth-child(1)>.datagrid-table-wrapper:nth-child(1)>.datagrid-table:nth-child(1)>.datagrid-row.server-side-row:nth-child(2)>.datagrid-row-flex.datagrid-row-master:nth-child(1)>.datagrid-row-scrollable:nth-child(2)>.datagrid-scrolling-cells:nth-child(1)>.datagrid-cell:nth-child(4)>:nth-child(1)>.limited-unlimited-selection.no-margin-top.flex-form-group.flex.clr-form-control:nth-child(1)>.clr-control-container:nth-child(1)>.clr-radio-wrapper:nth-child(1)>.flex:nth-child(1)>.content:nth-child(2) input",
+          "description":{
+             "en":"You can specify a concreate quota value..."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":0
+       },
+       {
+         "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(8)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-body:nth-child(2)>:nth-child(3)>:nth-child(2)>.datagrid-host:nth-child(1)>.datagrid-outer-wrapper:nth-child(2)>.datagrid-inner-wrapper:nth-child(1)>.datagrid:nth-child(1)>.datagrid-table-wrapper:nth-child(1)>.datagrid-table:nth-child(1)>.datagrid-row.server-side-row:nth-child(2)>.datagrid-row-flex.datagrid-row-master:nth-child(1)>.datagrid-row-scrollable:nth-child(2)>.datagrid-scrolling-cells:nth-child(1)>.datagrid-cell:nth-child(4)>:nth-child(1)>.limited-unlimited-selection.no-margin-top.flex-form-group.flex.clr-form-control:nth-child(1)>.clr-control-container:nth-child(1)>.clr-radio-wrapper:nth-child(2)>.unlimited.clr-control-label:nth-child(2)",
+         "description":{
+            "en":"...or set it to unlimited quota."
+         },
+         "preStepRoute":null,
+         "nextStepTimeout":10000,
+         "action":0
+      },
+       {
+          "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(8)>:nth-child(1)>.open:nth-child(1)>.modal:nth-child(2)>.modal-lg.modal-dialog:nth-child(1)>.modal-content-wrapper:nth-child(2)>.modal-content:nth-child(1)>.modal-footer:nth-child(3)>.cancel-btn.btn-outline.btn:nth-child(1)",
+          "description":{
+             "en":"Let's now see where the quotas can be previewed and also managed from."
+          },
+          "preStepRoute":null,
+          "nextStepTimeout":10000,
+          "action":1,
+          "spec":{
+             "requiresClick":true
+          }
+       },
+       {
+         "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(3)>.datagrid-host.users-datagrid:nth-child(1)>.datagrid-outer-wrapper:nth-child(2)>.datagrid-inner-wrapper:nth-child(1)>.datagrid:nth-child(1)>.datagrid-table-wrapper:nth-child(1)>.datagrid-table:nth-child(1)>.datagrid-selected.datagrid-row:nth-child(2)>.datagrid-row-flex.datagrid-row-master:nth-child(1)>.datagrid-row-scrollable:nth-child(2)>.datagrid-scrolling-cells:nth-child(1)>.datagrid-cell:nth-child(7)>:nth-child(1)",
+         "description":{
+            "en":"Navigate to user's details."
+         },
+         "preStepRoute":null,
+         "nextStepTimeout":10000,
+         "action":1,
+         "spec":{
+            "requiresClick":true
+         }
+      },
+      {
+         "elementSelector":"vcd-routable-tabs div.routable-tabs nav section:nth-child(1)>a:nth-child(2)",
+         "description":{
+            "en":"Navigate to user's quota management."
+         },
+         "preStepRoute":null,
+         "nextStepTimeout":10000,
+         "action":1,
+         "spec":{
+            "requiresClick":true
+         }
+      },
+      {
+         "elementSelector":"BODY>:nth-child(1)>:nth-child(1)>.main-container:nth-child(1)>.content-wrapper:nth-child(6)>.content:nth-child(1)>:nth-child(1)>.content-container:nth-child(2)>.content-area:nth-child(1)>:nth-child(2)>:nth-child(1)>:nth-child(3)>:nth-child(1)>.vertical.routable-tabs:nth-child(1)>.section-content-container:nth-child(2)",
+         "description":{
+            "en":"This screen provides information about user's quotas and allows them to manage them."
+         },
+         "preStepRoute":null,
+         "nextStepTimeout":10000,
+         "action":1,
+         "spec":{
+            "requiresClick":true
+         }
+      }
+    ],
+    "id":"99f2948a-7a14-461c-deac-87cb2fe44ac1",
+    "title":{
+       "en":"Manage user's quota"
+    },
+    "description":{
+       "en":"Overview of how to set quotas to existing users"
+    },
+    "scope":[
+       "service-provider"
+    ],
+    "includeInAssistant": true
+ }
