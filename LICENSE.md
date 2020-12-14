@@ -1,6 +1,8 @@
+# ui-guided-tours
+
 Copyright 2020 VMware, Inc.
 
-The BSD-2 license (the "License") set forth below applies to all parts of the ui-guided-tours project. You may not use this file except in compliance with the License.
+The BSD-2 license (the "License") set forth below applies to all parts of the **ui-guided-tours** project. You may not use this file except in compliance with the License.
 
 BSD-2 License 
 
